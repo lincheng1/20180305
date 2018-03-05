@@ -1,12 +1,9 @@
-﻿  Moc'ing GEN.h...
-  Uic'ing GEN.ui...
-  Rcc'ing GEN.qrc...
-RCC : warning : No resources in 'D:\20180305\GEN\GEN\GEN.qrc'.
-  
-  GEN.cpp
-  moc_GEN.cpp
-  main.cpp
-  正在生成代码...
-  qrc_GEN.cpp
-  GEN.vcxproj -> D:\20180305\GEN\x64\Debug\GEN.exe
-  GEN.vcxproj -> D:\20180305\GEN\x64\Debug\GEN.pdb (Full PDB)
+﻿  GEN.cpp
+GEN.cpp(62): error C2065: “obj1”: 未声明的标识符
+GEN.cpp(62): error C2228: “.insert”的左边必须有类/结构/联合
+  GEN.cpp(62): note: 类型是“unknown-type”
+GEN.cpp(64): error C2065: “obj1”: 未声明的标识符
+GEN.cpp(103): error C2374: “jsonDoc”: 重定义；多次初始化
+  GEN.cpp(64): note: 参见“jsonDoc”的声明
+GEN.cpp(104): error C2374: “ba”: 重定义；多次初始化
+  GEN.cpp(65): note: 参见“ba”的声明

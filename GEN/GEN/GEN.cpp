@@ -26,14 +26,7 @@ GEN::GEN(QWidget *parent)
 
 void GEN::setline()
 {
-	currentValue++;
-	if (currentValue == 100)
-		currentValue = 0;
-	progDlg->setValue(currentValue);
-	QCoreApplication::processEvents();//避免界面冻结
-	if (progDlg->wasCanceled())
-		progDlg->setHidden(true);//隐藏对话框
-
+	
 }
 
 void GEN::saveset()
@@ -53,34 +46,34 @@ void GEN::saveset()
 	timer->start(50);//开启一个没有终点的定时器
 	
 
-	/*QJsonObject Properties;
-	Properties.insert("ORDER", ui.comboBox_2->currentText());
-	Properties.insert("SIZE", ui.lineEdit_2->text().toDouble());
-	Properties.insert("TYPE", ui.comboBox_4->currentText());
-	Properties.insert("CORE", ui.comboBox_3->currentText());
-	Properties.insert("IsFine", ui.comboBox->currentText());
-	Properties.insert("MaxSize", ui.lineEdit_6->text().toFloat());
-	Properties.insert("MinSize", ui.lineEdit_7->text().toDouble());
-	Properties.insert("MaxAngle", ui.lineEdit_8->text().toDouble());
-	Properties.insert("MinAngle", ui.lineEdit_9->text().toDouble());
-	Properties.insert("SpanAngle", ui.lineEdit_10->text().toDouble());
-	Properties.insert("MaxEdgeAlt", ui.lineEdit_11->text().toDouble());
+						/*QJsonObject Properties;
+						Properties.insert("ORDER", ui.comboBox_2->currentText());
+						Properties.insert("SIZE", ui.lineEdit_2->text().toDouble());
+						Properties.insert("TYPE", ui.comboBox_4->currentText());
+						Properties.insert("CORE", ui.comboBox_3->currentText());
+						Properties.insert("IsFine", ui.comboBox->currentText());
+						Properties.insert("MaxSize", ui.lineEdit_6->text().toFloat());
+						Properties.insert("MinSize", ui.lineEdit_7->text().toDouble());
+						Properties.insert("MaxAngle", ui.lineEdit_8->text().toDouble());
+						Properties.insert("MinAngle", ui.lineEdit_9->text().toDouble());
+						Properties.insert("SpanAngle", ui.lineEdit_10->text().toDouble());
+						Properties.insert("MaxEdgeAlt", ui.lineEdit_11->text().toDouble());
 
-	obj1.insert("Properties", Properties);
+						obj1.insert("Properties", Properties);
 
-	QJsonDocument jsonDoc(obj1);
-	QByteArray ba = jsonDoc.toJson();
+						QJsonDocument jsonDoc(obj1);
+						QByteArray ba = jsonDoc.toJson();
 
-	QFile file("mesh22.json");
-	if (!file.open(QIODevice::WriteOnly))
-	{
-		qDebug() << "write json file failed";
-		return ;
-	}
-	file.write(ba);
+						QFile file("mesh22.json");
+						if (!file.open(QIODevice::WriteOnly))
+						{
+							qDebug() << "write json file failed";
+							return ;
+						}
+						file.write(ba);
 
-	file.close();
-	this->close();*/
+						file.close();
+						this->close();*/
 
 	//////////////////////////////
 	QMap<QString, QVariant> mapJson;
