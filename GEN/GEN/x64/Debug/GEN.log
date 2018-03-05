@@ -1,3 +1,12 @@
-﻿  GEN.cpp
-  GEN.vcxproj -> C:\Users\lincheng\Desktop\QT\进度条成功版\GEN\x64\Debug\GEN.exe
-  GEN.vcxproj -> C:\Users\lincheng\Desktop\QT\进度条成功版\GEN\x64\Debug\GEN.pdb (Full PDB)
+﻿  Moc'ing GEN.h...
+  Uic'ing GEN.ui...
+  Rcc'ing GEN.qrc...
+RCC : warning : No resources in 'D:\20180305\GEN\GEN\GEN.qrc'.
+  
+  GEN.cpp
+  moc_GEN.cpp
+  main.cpp
+  正在生成代码...
+  qrc_GEN.cpp
+  GEN.vcxproj -> D:\20180305\GEN\x64\Debug\GEN.exe
+  GEN.vcxproj -> D:\20180305\GEN\x64\Debug\GEN.pdb (Full PDB)

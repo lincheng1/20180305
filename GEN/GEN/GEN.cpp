@@ -26,7 +26,13 @@ GEN::GEN(QWidget *parent)
 
 void GEN::setline()
 {
-	
+	currentValue++;
+	if (currentValue == 100)
+		currentValue = 0;
+	progDlg->setValue(currentValue);
+	QCoreApplication::processEvents();//避免界面冻结
+	if (progDlg->wasCanceled())
+		progDlg->setHidden(true);//隐藏对话框
 
 }
 
