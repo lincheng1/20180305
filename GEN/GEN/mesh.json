@@ -1,0 +1,15 @@
+{
+    "Properties": {
+        "CORE": 1,
+        "IsFine": "false",
+        "MaxAngle": 30,
+        "MaxEdgeAlt": 2,
+        "MaxSize": 10,
+        "MinAngle": 1,
+        "MinSize": 0.1,
+        "ORDER": 1,
+        "SIZE": 4,
+        "SpanAngle": 30,
+        "TYPE": "TET"
+    }
+}
